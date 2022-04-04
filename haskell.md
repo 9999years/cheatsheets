@@ -1,6 +1,8 @@
 # Haskell
 
-- Something called "Weak Head Normal Form" (WHNF).
+- "Weak Head Normal Form" (WHNF) evaluates an expression until a data
+  constructor or unapplied lambda is reached at the outermost level.
+  Therefore `(1, "foo" ++ "bar")` is WHNF with the tuple as the constructor.
 - Left associativity: `2 * 3 * 4 => (2 * 3) * 4`.
   Right associativity: `2 ^ 3 ^ 4 => 2 ^ (3 ^ 4)`.
 - Low precedence is like bigger parenthesis.
@@ -17,6 +19,27 @@
 - You have to parenthesize infix operators to refer to them as values: `(>>)`.
 - Cons builds lists: `'r' : "ebecca" == "rebecca"`. `!!` for indexing.
 - "Sectioning" is the partial application of an infix operator
+- `if ... then ... else ...`
+- Matching on cases:
+
+      case scrutinee of
+        pattern1 -> expr1
+        pattern2 -> expr2
+        ...
+- Guard blocks:
+
+      abs :: Integer -> Integer
+      abs x
+        | x < 0     = (-x
+        | otherwise = x
+- Raise an exception: `error "Foo"`.
+- List comprehensions: `[x^2 | x <- [1..10]]`.
+  - Filtering: `[x^2 | x <- [1..10], rem x 2 == 0]`.
+  - Cartesian product: `[x^y | x <- [1..5], y <- [2, 3]]`.
+- The bottom value is spelled `undefined`.
+- The "spine" is the connective glue that holds a collection together
+- A scan is a fold that returns a list of intermediate results
+
 
 ## Variable conventions
 
@@ -38,9 +61,33 @@
 - `Fractional a => a -> a` is syntax for a type constraint
   - Multiple constraints: `(Num a, Num b) => a -> b -> b`.
   - Unconstrained variable: `a -> a` (I think the forall is implicit?)
+- "Type defaulting"?
+
+### Typeclasses
+
+Declaring:
+
+    class Foo a where
+      func :: a -> Baz
+
+With a superclass:
+
+    class Foo a => Bar a where ...
+
+Implementing:
+
+    instance Foo Bool where
+      func b = ...
+
+With a constraint:
+
+    instance Eq a => Eq (Foo a) where ...
 
 ## GHCi
 
 - `:load` to load a file (with `.hs` extension)
+- `:import` to load a module (like `Data.Char`)
 - `:t` for type info
-- `:info` shows type info, associativity, precedence
+- `:info` shows type info, typeclass impls, associativity, precedence
+- `:sprint` shows what's been evaluated. Note that polymorphic values like
+  `Num a => a` will show as unevaluated.
