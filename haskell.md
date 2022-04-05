@@ -42,6 +42,13 @@
 - A scan is a fold that returns a list of intermediate results
 
 
+## Useful functions / infix operators
+
+- `<$>`: `fmap`
+- `pure` is like `return` but for `Applicative`
+- `<*>` (apply): `f (a -> b) -> f a -> f b`
+
+
 ## Variable conventions
 
 - Type variables are generally `a`, `b`, `c`...
@@ -71,6 +78,11 @@
 - Operators that start with a `:` must be an infix type/data constructor.
 - `data Maybe a = Just a | Nothing`.
 - `data Either a b = Left a | Right b`.
+- Monoid: binary associative operation with an identity.
+  - Semigroup with identity.
+  - Associative: parens can be rearranged.
+- Functor: applying a function over/around a structure without altering the
+  structure. A generalized version of `map`.
 
 ### Typeclasses
 
