@@ -30,8 +30,9 @@
 
       abs :: Integer -> Integer
       abs x
-        | x < 0     = (-x
+        | x < 0     = (-x)
         | otherwise = x
+- As-patterns: `name@pattern`, e.g. `lst@(x:xs)`.
 - Raise an exception: `error "Foo"`.
 - List comprehensions: `[x^2 | x <- [1..10]]`.
   - Filtering: `[x^2 | x <- [1..10], rem x 2 == 0]`.
@@ -49,6 +50,9 @@
 ## Types
 
     data Name = Variant | OtherVariant | ... deriving Typeclass
+    --   ^^^^   ^^^^^^^   ^^^^^^^^^^^^
+    --   Type constructor
+    --          Data constructors
 
 - `Int`: Fixed. `Integral`: Arbitrarily sized.
 - `Float` and `Double`: single- and double-precision floats.
@@ -62,6 +66,11 @@
   - Multiple constraints: `(Num a, Num b) => a -> b -> b`.
   - Unconstrained variable: `a -> a` (I think the forall is implicit?)
 - "Type defaulting"?
+- `newtype Foo = Foo InnerType`. No runtime overhead.
+- Records: `data Person = Person { name :: String, age :: Int } deriving (Eq, Show)`.
+- Operators that start with a `:` must be an infix type/data constructor.
+- `data Maybe a = Just a | Nothing`.
+- `data Either a b = Left a | Right b`.
 
 ### Typeclasses
 
@@ -83,6 +92,19 @@ With a constraint:
 
     instance Eq a => Eq (Foo a) where ...
 
+### Kinds
+
+The types of types. A "plain" type like `Bool` has kind `*`. A polymorphic type
+like `Either` has kind `* -> * -> *` (depending on how many type arguments it
+has).
+
+- A "higher-kinded type" is one that needs a type argument before it can be
+  instantiated.
+- A "lifted" type can be inhabited by bottom. Most types are "lifted" and
+  represented by a pointer.
+- Unlifted types have kind `#`; native machine types, raw pointers.
+  - Special case: newtypes are kind `*` _but_ unlifted.
+
 ## GHCi
 
 - `:load` to load a file (with `.hs` extension)
@@ -91,3 +113,52 @@ With a constraint:
 - `:info` shows type info, typeclass impls, associativity, precedence
 - `:sprint` shows what's been evaluated. Note that polymorphic values like
   `Num a => a` will show as unevaluated.
+- `:kind` for kinds!
+- `:browse ModuleName` shows exports
+- `:m` unloads modules
+
+## Language extensions
+
+- <http://dev.stephendiehl.com/hask/#language-extensions>
+- Survey: Which language extensions would you like to be enabled by default?
+  <https://taylor.fausak.me/2020/11/22/haskell-survey-results/#s2q5>
+- History of language extensions added: <https://gitlab.haskell.org/ghc/ghc/-/wikis/language-pragma-history>
+- GHC 9.2 enables a bunch of extensions by default if you set your `language`
+  property to `GHC2021` in your `*.cabal` file.
+  <https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/control.html>
+
+
+## Modules & imports
+
+- Exports: `module ModuleName (exports, ...) where`
+- Selective imports: `import Data.Bool (bool)` only imports `bool`.
+  - `import Data.Bool hiding (bool)` imports everything except `bool`.
+- Qualified: `import qualified Data.Bool`, then `Data.Bool.not`
+  - Aliased: `import qualified Data.Bool as B`, then `B.not`.
+  - Aliased/selective: `import qualified Data.Bool as B (not)` imports `B.not`.
+- `import Mod ()` brings typeclass instances into scope, nothing else.
+- Data constructors: `import System.IO (BufferMode(NoBuffering))`
+  - All constructors: `import System.IO (BufferMode(..))`
+  - I think the grammar is similar for typeclasses/methods: <https://www.haskell.org/onlinereport/haskell2010/haskellch5.html#x11-1010005.3>
+
+
+## Project management
+
+- Cabal: Common Architecture for Building Applications and Libraries. COME ON.
+- Cabal describes a single package with a `.cabal` file.
+- Stack "helps manage individual packages and projects made up of multiple
+  packages".
+- Stack project layout:
+  - `Setup.hs`
+  - `foo.cabal`: describes package/executables
+  - `stack.yaml`, `stack.yaml.lock`
+  - `src/Main.hs`
+- Stack commands:
+  - `stack build`
+  - `stack setup`: init deps / GHC
+  - `stack exec`: Runs executable
+  - `stack new NAME simple`: creates a `NAME` directrory
+
+## Testing
+
+`hspec` for simple value-based tests, `QuickCheck` for property based tests.
