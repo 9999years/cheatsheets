@@ -32,7 +32,6 @@
       abs x
         | x < 0     = (-x)
         | otherwise = x
-- As-patterns: `name@pattern`, e.g. `lst@(x:xs)`.
 - Raise an exception: `error "Foo"`.
 - List comprehensions: `[x^2 | x <- [1..10]]`.
   - Filtering: `[x^2 | x <- [1..10], rem x 2 == 0]`.
@@ -41,6 +40,12 @@
 - The "spine" is the connective glue that holds a collection together
 - A scan is a fold that returns a list of intermediate results
 - You can `let` inside a `do` block! Just leave out the `in` part.
+
+## Patterns
+
+- As-patterns: `name@pattern`, e.g. `lst@(x:xs)`.
+- View patterns (extension): `(expr -> pattern)` applies `expr` and matches
+  `pattern` against the result.
 
 
 ## Useful functions / infix operators
