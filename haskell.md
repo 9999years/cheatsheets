@@ -40,6 +40,7 @@
 - The bottom value is spelled `undefined`.
 - The "spine" is the connective glue that holds a collection together
 - A scan is a fold that returns a list of intermediate results
+- You can `let` inside a `do` block! Just leave out the `in` part.
 
 
 ## Useful functions / infix operators
@@ -174,3 +175,7 @@ has).
 ## Testing
 
 `hspec` for simple value-based tests, `QuickCheck` for property based tests.
+
+## Haddock documentation
+
+<https://haskell-haddock.readthedocs.io/en/latest/markup.html>

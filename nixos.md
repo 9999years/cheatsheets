@@ -22,6 +22,8 @@ Use `--no-daemon` for single-user. See <https://nixos.org/download.html>
 ```nix
 { pkgs ? import <nixpkgs> {} }:
 pkgs.mkShell {
-  nativeBuildInputs = [ pkgs.ghc ... ];
+  nativeBuildInputs = with pkgs; [
+    ghc
+  ];
 }
 ```
