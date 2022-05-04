@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{github}
+\title{GitHub Cheat Sheet}
+\author{Rebecca Turner}
+\date{2022-05-04}
+\begin{document}
+
+\section{Global}
+\begin{description}
+  \bind{/}{Focus the search bar.}
+  \bind*{\key{g} \key{n}}{Go to Notifications}
+  \bind{\cmd-k}{Open command palette}
+  \bind{\cmd-\alt-k}{Open command palette (when editing Markdown text)}
+  \bind{x}{Toggle selection (then \key{j}/\key{k} to navigate up/down)}
+\end{description}
+
+\section{Repositories}
+\begin{description}
+  \bind{.}{Open in github.dev editor}
+  \bind{>}{Open github.dev editor in a new tab}
+  \bind{\cmd-\shift-f}{Open cs.github.com in a new tab}
+  \bind{\cmd-/}{Focus secondary search bar}
+  \bind*{\key{g} \key{c}}{Go to Code}
+  \bind*{\key{g} \key{i}}{Go to Issues}
+  \bind*{\key{g} \key{p}}{Go to Pull Requests}
+  \bind*{\key{g} \key{a}}{Go to Actions}
+  \bind*{\key{g} \key{b}}{Go to Projects}
+  \bind*{\key{g} \key{w}}{Go to Wiki}
+  \bind*{\key{g} \key{g}}{Go to Discussions}
+\end{description}
+
+\section{Issues/pull request lists}
+\begin{description}
+  \bind*{\key{o} or \key{enter}}{Open pull request}
+  \bind{c}{Create an issue}
+  \bind{u}{Filter by author}
+  \bind{l}{Filter by or edit labels}
+  \bind{a}{Filter by or edit assignee}
+\end{description}
+
+\section{Issues/pull requests}
+\begin{description}
+  \bind{q}{Request a reviewer}
+  \bind{a}{Set an assignee}
+  \bind{x}{Link an issue or pull request from the same repository}
+  \bind{c}{Open the list of commits}
+  \bind{t}{Open the list of changed files}
+\end{description}
+
+\section{Viewing code}
+\begin{description}
+  \bind{t}{Open the file finder}
+  \bind{l}{Jump to a line in the file}
+  \bind{w}{Open the branch/tag selector}
+  \bind{y}{Expand the \textsc{url} to its canonical form}
+  \bind{i}{Toggle comments on diffs}
+  \bind{a}{Toggle annotations on diffs}
+  \bind{b}{Open the blame}
+\end{description}
+
+\section{Commenting}
+\begin{description}
+  \bind{\cmd-\shift-p}{Toggle between Write and Preview panes}
+  \bind*{\key{Ctrl-.} \key{Ctrl-<number>}}{Open saved replies menu and autofill with a saved reply}
+  \bind{\cmd-g}{Insert a suggestion}
+  \bind{r}{Quote the selected text in your reply}
+\end{description}
+
+\section{Notifications}
+\begin{description}
+  \bind{e}{Mark as done}
+  \bind{\shift-i}{Mark as read}
+  \bind{\shift-u}{Mark as unread}
+  \bind{\shift-m}{Unsubscribe}
+\end{description}
+
+\end{document}

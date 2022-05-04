@@ -1,0 +1,56 @@
+\usepackage[
+  letterpaper,
+  margin=0.25in,
+]{geometry}
+\raggedbottom
+
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\setmainfont{Tiempos Text}
+\setsansfont{Calibre-Regular}
+\setmonofont{PragmataPro}
+
+\usepackage{xcolor}
+\usepackage{xparse}
+
+\NewDocumentCommand{\key}{s m}
+  {\begingroup
+    \fcolorbox{.}{white}%
+      {\texttt{\vphantom{Xj}#2}}%
+  \endgroup}
+\NewDocumentCommand{\bind}{s m m}
+  {\item[\IfBooleanTF{#1}{#2}{\key{#2}}] #3}
+
+\def\shift{⇧}
+\def\alt{Alt} % ⌥
+\def\cmd{\textmd{\texttt{⌘}}}
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[description]{style=unboxed}
+
+\renewcommand{\maketitle}{{\large\noindent\textbf{\@title}%
+  \qquad\@author
+  \qquad Last revised \@date}}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\large\bfseries}   % The style of the section title
+  {}                             % a prefix
+  {0pt}                          % How much space exists between the prefix and the title
+  {}    % How the section is represented
+
+\newcommand{\github}[1]{\faGithub~\texttt{#1}}
+
+\AtBeginDocument{%
+  \maketitle
+  \raggedright
+  \begin{multicols*}{2}
+  \raggedcolumns
+}
+\AtEndDocument{
+  \end{multicols*}
+}
+
+\newcommand{\nonewitem}{\\ \vspace*{-1.35em}}

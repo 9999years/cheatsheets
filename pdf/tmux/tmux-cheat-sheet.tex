@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{tmux}
+\title{Tmux Cheat Sheet}
+\author{Rebecca Turner}
+\date{2019-07-14}
+\begin{document}
+
+\section{Panes}
+\begin{description}
+\bind*{\key{\char"22} \key*{-}}{Split vertically\painless}
+\bind*{\key{\%} \key*{|}}{Split horizontally\painless}
+\bind*{\key*{\char"5C} \key*{\char"5F}}{Split full-width horizontally,
+  vertically\painless}
+
+\bind*{\key{\alt-o} \key{C-o}}{Rotate panes in window forwards \faRedo,
+  backwards \faUndo}
+\bind{!}{Break pane out of window}
+
+\bind*{\key{;} \key{o}}{Select previous, next pane}
+\bind{q}{Display pane indexes}
+\bind{m}{Mark current pane}
+\bind{M}{Clear marked pane}
+\bind{x}{Kill current pane}
+\bind{z}{Zoom in/out}
+\bind*{\key{\{} \key{\}}}{Swap current and previous, next panes}
+
+\bind*{\key*{h} \key*{j} \key*{k} \key*{l}}{\painless\nonewitem}
+\bind*{\key{←} \key{↓} \key{↑} \key{→}}{Select adjacent pane}
+
+\bind*{\key{\alt-1} to \key{\alt-5}}{Arrange panes:
+  \begin{enumerate}
+     \item \layoutIcon{1} Even-horizontal
+     \item \layoutIcon{2} Even-vertical
+     \item \layoutIcon{3} Main-horizontal
+     \item \layoutIcon{4} Main-vertical
+     \item \layoutIcon{5} Tiled
+  \end{enumerate}}
+\bind*{\key{C-↑} \key{C-↓} \key{C-←} \key{C-→}}{Resize pane 1 cell}
+
+\bind*{\key*{\shift-H} \key*{\shift-J} \key*{\shift-K} \key*{\shift-L}}{\painless\nonewitem}
+\bind*{\key{\alt-←} \key{\alt-↓} \key{\alt-↑} \key{\alt-→}}{Resize pane 5 cells}
+\end{description}
+
+\columnbreak
+\section{Windows}
+\begin{description}
+\bind{\&}{Kill current window}
+\bind{\char"27}{Prompt for window index to select}
+\bind{,}{Rename current window}
+\bind{.}{Prompt index to move window to}
+\bind*{\key{0} to \key{9}}{Select window 0 to 9}
+\bind{c}{Create new window}
+\bind{f}{Prompt to search for text in windows}
+\bind{i}{Display info about window}
+\bind{l}{Move to previously active window}
+\bind*{\key{p} \key{n}}{Previous, next window}
+\bind{w}{Choose the window interactively}
+\bind{Space}{Arrange window in the next preset layout}
+\bind*{\key{\alt-p} \key{\alt-n}}{Move to the previous, next window with bell or activity marker}
+\bind*{\key*{<} \key*{>}}{Move window one position to the left, right\painless}
+\end{description}
+
+\section{Copy / paste}
+\begin{description}
+\bind{=}{Choose paste buffer interactively}
+\bind{\char"5D}{Paste most recent buffer}
+\bind{-}{Delete most recent buffer}
+\bind{\#}{List buffers}
+\bind{\char"5B}{Enter copy / scrollback mode}
+\bind{PgUp}{Enter copy mode and scroll one page up}
+\end{description}
+
+\section{Sessions}
+\begin{description}
+\bind*{\key*{C-s} \key*{C-r}}{Save, restore session (across restarts)\resurrect}
+\bind{\$}{Rename current session}
+\bind*{\key{(} \key{)}}{Switch client to previous, next session}
+\bind{L}{Switch client back to the last session}
+\bind{d}{Detach the current client}
+\bind{D}{Choose client to detach}
+\bind{r}{Force client redraw}
+\bind{s}{Select new session interactively}
+\bind{C-z}{Suspend client}
+\end{description}
+
+\section{Misc}
+\begin{description}
+\bind{C-b}{Send prefix key \key{C-b} to the application}
+\bind{:}{Enter command-prompt}
+\bind{?}{List key bindings}
+\bind{t}{Show the time}
+\bind{\char"7E}{Show previous messages from tmux}
+\bind*{\key*{\shift-R}}{Source \texttt{\char"7E/.tmux.conf}\sensible}
+\end{description}
+
+\section{\textsc{tpm}}
+\begin{description}
+\bind{\shift-I}{Install plugins}
+\bind{\shift-U}{Update plugins}
+\bind{\alt-u}{Autoremove plugins}
+\end{description}
+
+\section{Legend}
+All shortcuts follow the prefix key, \key{C-b} by default.
+\begin{description}
+  \item[\painless] \github{tmux-plugins/tmux-pain-control}
+  \item[\sensible] \github{tmux-plugins/tmux-sensible}
+  \item[\resurrect] \github{tmux-plugins/tmux-resurrect}
+\end{description}
+\end{document}

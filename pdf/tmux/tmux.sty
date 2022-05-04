@@ -1,0 +1,82 @@
+\usepackage[
+  letterpaper,
+  margin=0.25in,
+]{geometry}
+\raggedbottom
+
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\setmainfont{Tiempos Text}
+\setsansfont{Calibre-Regular}
+\setmonofont{PragmataPro}
+
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{graphicx}
+\usepackage[obeyclassoptions]{standalone}
+\usepackage{tikz}
+\tikzset{
+  x=0.75em,
+  y=0.75em,
+  every picture/.style={line width=1pt},
+}
+
+\definecolor{tmuxPlugin}{named}{blue}
+
+\NewDocumentCommand{\layoutIcon}{m}
+  {\includestandalone[page=#1]{preset-layouts}}
+
+\NewDocumentCommand{\key}{s m}
+  {\begingroup
+    %\IfBooleanT{#1}{\fboxrule=1pt}%
+    \fcolorbox{\IfBooleanTF{#1}{tmuxPlugin}{.}}{white}%
+      {\texttt{\vphantom{Xj}#2}}%
+  \endgroup}
+\NewDocumentCommand{\bind}{s m m}
+  {\item[\IfBooleanTF{#1}{#2}{\key{#2}}] #3}
+
+\NewDocumentCommand{\remark}{s m}
+  {{\color{tmuxPlugin}%
+    \sffamily
+      \fbox{%
+        \vphantom{\texttt{Xj}}%
+        {\scriptsize #2}}}}
+
+\let\painlessSym\faSyringe
+\let\resurrectSym\faSkull
+\let\sensibleSym\faThumbsUp
+
+\def\sensible{ \remark{\sensibleSym}}
+\def\painless{ \remark{\painlessSym}}
+\def\resurrect{ \remark{\resurrectSym}}
+\def\shift{⇧}
+\def\alt{Alt} % ⌥
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[description]{style=unboxed}
+
+\renewcommand{\maketitle}{{\large\noindent\textbf{\@title}%
+  \qquad\@author
+  \qquad Last revised \@date}}
+
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\large\bfseries}   % The style of the section title
+  {}                             % a prefix
+  {0pt}                          % How much space exists between the prefix and the title
+  {}    % How the section is represented
+
+\newcommand{\github}[1]{\faGithub~\texttt{#1}}
+
+\AtBeginDocument{%
+  \maketitle
+  \begin{multicols*}{3}
+  \raggedcolumns
+}
+\AtEndDocument{
+  \end{multicols*}
+}
+
+\newcommand{\nonewitem}{\\ \vspace*{-1.35em}}
