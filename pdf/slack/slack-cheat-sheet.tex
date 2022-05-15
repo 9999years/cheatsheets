@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{../cheatsheet}
+\title{Slack Cheat Sheet}
+\author{Rebecca Turner}
+\date{2022-05-15}
+\begin{document}
+
+\section{Global}
+\begin{description}
+  \bind{\cmd-N}{Compose a new message}
+  \bind{\shift-\cmd-Y}{Set your status}
+  \bind{\shift-\cmd-D}{Toggle left sidebar}
+  \bind{\cmd-.}{Toggle right sidebar}
+  \bind{\cmd-U}{Upload a file}
+  \bind{\shift-\cmd-\backslash}{Emoji react to message}
+  \bind{\cmd-G}{Search}
+  \bind{\cmd-F}{Search current conversation}
+  \bind{\shift-\cmd-H}{Enter/exit huddle}
+  \bind{\shift-\cmd-Space}{Toggle mute in huddle}
+\end{description}
+
+\section{Navigation}
+\begin{description}
+  \bind*{\key{\cmd-K} or \key{\cmd-T}}{Jump to a conversation}
+  \bind{\cmd-J}{Jump to most recent unread message}
+  \bind{\shift-\alt-\up}{Jump to previous unread channel/\textsc{dm}}
+  \bind{\shift-\alt-\down}{Jump to next unread channel/\textsc{dm}}
+  \bind{\shift-\cmd-A}{Go to unreads view}
+  \bind{\shift-\cmd-T}{Go to threads view}
+  \bind{\shift-\cmd-K}{Go to \textsc{dm}s}
+  \bind{\shift-\cmd-M}{Go to mentions/reactions}
+  \bind{\shift-\cmd-S}{Go to saved items}
+  \bind{\shift-\cmd-L}{Browse channels}
+  \bind{\shift-\cmd-I}{Open conversation details}
+  \bind{F6}{Focus next section}
+  \bind{\shift-F6}{Focus previous section}
+\end{description}
+
+\section{Mark messages read}
+\begin{description}
+  \bind{Esc}{Mark current conversation read}
+  \bind{\shift-Esc}{Mark all messages read}
+\end{description}
+
+\section{Actions on focused messages}
+\begin{description}
+  \bind{E}{Edit}
+  \bind{Backspace}{Delete}
+  \bind*{\key{T} or \key{\right}}{Reply to thread}
+  \bind{S}{Share}
+  \bind{P}{Pin/unpin}
+  \bind{A}{Save/unsave}
+  \bind{U}{Mark previous messages unread}
+  \bind{M}{Create a reminder about a message}
+  \bind{R}{Add an emoji reaction}
+\end{description}
+
+\end{document}
