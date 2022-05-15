@@ -1,5 +1,42 @@
 \documentclass{article}
-\usepackage{tmux}
+\usepackage[columns=3]{../cheatsheet}
+\usepackage{graphicx}
+\usepackage[obeyclassoptions]{standalone}
+\usepackage{tikz}
+\tikzset{
+  x=0.75em,
+  y=0.75em,
+  every picture/.style={line width=1pt},
+}
+
+\definecolor{tmuxPlugin}{named}{blue}
+
+\NewDocumentCommand{\layoutIcon}{m}
+  {\includestandalone[page=#1]{preset-layouts}}
+
+\RenewDocumentCommand{\key}{s m}
+  {\begingroup
+    \fcolorbox{\IfBooleanTF{#1}{tmuxPlugin}{.}}{white}%
+      {\texttt{\vphantom{Xj}#2}}%
+  \endgroup}
+
+\NewDocumentCommand{\remark}{s m}
+  {{\color{tmuxPlugin}%
+    \sffamily
+      \fbox{%
+        \vphantom{\texttt{Xj}}%
+        {\scriptsize #2}}}}
+
+\let\painlessSym\faSyringe
+\let\resurrectSym\faSkull
+\let\sensibleSym\faThumbsUp
+
+\def\sensible{ \remark{\sensibleSym}}
+\def\painless{ \remark{\painlessSym}}
+\def\resurrect{ \remark{\resurrectSym}}
+
+\newcommand{\github}[1]{\faGithub~\texttt{#1}}
+
 \title{Tmux Cheat Sheet}
 \author{Rebecca Turner}
 \date{2019-07-14}
