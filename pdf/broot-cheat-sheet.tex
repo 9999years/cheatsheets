@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{cheatsheet}
+\title{Broot Cheat Sheet}
+\author{Rebecca Turner}
+\date{2023-10-06}
+
+\NewDocumentCommand
+  {\brverb}
+  {
+    s o % Shortcut
+    m % Invocation
+    o % Abbreviation
+    m % Description
+  }
+  {\bind*%
+    {%
+      \IfValueTF{#2}{\IfBooleanTF{#1}{#2}{\key{#2}} or }{}%
+      \key{#3}
+      \IfValueTF{#4}{ or \key{#4}}{}%
+    }%
+    {#5}}
+
+\begin{document}
+
+\section{Internal verbs}
+\begin{description}
+    \brverb[\left]{:back}{Back to previous state}
+    \brverb[Esc]{:escape}{Escape from completions, current input, page, etc.}
+    \brverb{:chmod [ARGS]}{Execute \texttt{chmod}}
+    \brverb{:clear\_stage}[cls]{Empty the staging area}
+    \brverb{:close\_preview}{Close the preview panel}
+    \brverb{:close\_staging\_area}[csa]{Close the staging area panel}
+    \brverb*[\key{\alt} \key{c}]{:copy\_path}{Copy file path}
+    \brverb{:cp NEWPATH}{Copy file}
+    \brverb[F1]{:help}{Open the help page}
+    \brverb[\down]{:line\_down [LINES]}{Scroll down or select the next line}
+    \brverb{:line\_down\_no\_cycle [LINES]}{Same as \texttt{:line\_down} but doesn't cycle from bottom to top}
+    \brverb[\up]{:line\_up [LINES]}{Scroll up or select the previous line}
+    \brverb{:line\_up\_no\_cycle [LINES]}{Same as \texttt{:line\_up} but doesn't cycle from bottom to top}
+    \brverb{:mkdir SUBPATH}[md]{Create a directory}
+    \brverb{:mv NEWPATH}{Move the file to the provided path}
+    \brverb{:no\_sort}[ns]{Remove all sorts}
+    \brverb{:next\_dir}{Select the next directory}
+    \brverb[Tab]{:next\_match}{Select the next matching file, or matching verb/path in auto-completion}
+    \brverb*[\key{\alt} \key{Enter}]{:open\_leave}{Open the selected file in the default OS opener and exit}
+    \brverb{:open\_preview}{Open the preview panel}
+    \brverb{:open\_staging\_area}[osa]{Open the staging area}
+    \brverb[Enter]{:open\_stay}{Open the selected file in the default OS opener}
+    \brverb[Enter]{:focus}{Set the root of the displayed tree to the selected directory}
+    \brverb{:open\_stay\_filter}{Like \texttt{:focus} but keeps the current filter pattern}
+    \brverb[PgDown]{:page\_down}{Scroll one page down}
+    \brverb[PgUp]{:page\_up}{Scroll one page up}
+    \brverb*[\key{Ctrl} \key{\left}]{:panel\_left}{Move to or open a panel to the left}
+    \brverb*[\key{Ctrl} \key{\left}]{:panel\_left\_no\_open}{Move to panel to the left}
+    \brverb*[\key{Ctrl} \key{\right}]{:panel\_right}{Move to or open a panel to the right}
+    \brverb*[\key{Ctrl} \key{\right}]{:panel\_right\_no\_open}{Move to panel to the right}
+    \brverb{:parent}{Focus the parent directory}
+    \brverb{:previous\_dir}{Select the previous directory}
+    \brverb{:print\_path}[pp]{Print the path and exit}
+    \brverb{:print\_relative\_path}[pp]{Print the relative path and exit}
+    \brverb{:print\_tree}[pt]{Print the tree and exit}
+    \brverb*[\key{Ctrl} \key{q}]{:quit}[q]{Exit}
+    \brverb[F5]{:refresh}{Refresh the displayed tree and clear the directory size cache}
+    \brverb{:rm}{Remove the selected file or directory \emph{without confirming}}
+    \brverb{:select\_first}{Select the first line}
+    \brverb{:select\_last}{Select the last line}
+    \brverb{:select PATH}{Select a path if it's visible in the tree}
+    \brverb{:sort\_by\_count}[sc]{Display one level of the tree and sort by number of children}
+    \brverb{:sort\_by\_date}[sd]{Sort by modification time}
+    \brverb{:sort\_by\_size}[ss]{Sort by size}
+    \brverb{:sort\_by\_type}[st]{Sort by file type}
+    \brverb{:sort\_by\_type\_dirs\_first}{Sort by file type, directories first}
+    \brverb{:sort\_by\_type\_dirs\_last}{Sort by file type, directories last}
+    \brverb[+]{:stage}{Add selection to staging area}
+    \brverb*[\key{Ctrl} \key{a}]{:stage\_all\_files}{Add all files matching the filter to the staging area}
+    \brverb{:toggle\_counts}{Toggle display of total counts of files per directory}
+    \brverb{:toggle\_dates}{Toggle display of modification times}
+    \brverb{:toggle\_device\_id}{Toggle display of device IDs}
+    \brverb{:toggle\_files}{Toggle displaying files (only show folders)}
+    \brverb{:toggle\_git\_file\_info}{Toggle displaying Git information}
+    \brverb{:toggle\_git\_ignore}{Toggle using \texttt{.gitignore} files}
+    \brverb{:toggle\_git\_status}{Toggle showing Git statuses}
+    \brverb{:toggle\_hidden}{Toggle showing hidden files (dotfiles)}
+    \brverb{:toggle\_perm}{Toggle showing permissions}
+    \brverb{:toggle\_preview}{Toggle preview panel}
+    \brverb{:toggle\_second\_tree}{Toggle displaying second tree}
+    \brverb{:toggle\_sizes}{Toggle the size mode}
+    \brverb*[\key{Ctrl} \key{g}]{:toggle\_stage}{Add or remove selection to staging area}
+    \brverb{:toggle\_staging\_area}{Open/close the staging area panel}
+    \brverb{:toggle\_trim\_root}{Toggle trimming of top-level files in the tree display}
+    \brverb[-]{:unstage}{Remove selection from staging area}
+    \brverb{:up\_tree}{Focus the parent of the current root}
+\end{description}
+
+\end{document}

@@ -29,10 +29,6 @@
 \NewDocumentCommand{\bind}{s m m}
   {\item[\IfBooleanTF{#1}{#2}{\key{#2}}] #3}
 
-\def\shift{⇧}
-\def\alt{Alt} % \textmd{\texttt{⌥}}
-\def\cmd{\textmd{\texttt{⌘}}}
-
 \usepackage{multicol}
 \usepackage{enumitem}
 \setlist[description]{style=unboxed}
@@ -61,6 +57,9 @@
 
 \newcommand{\nonewitem}{\\ \vspace*{-0.35em}}
 
+\def\shift{⇧}
+\def\alt{Alt} % \textmd{\texttt{⌥}}
+\def\cmd{\textmd{\texttt{⌘}}}
 \renewcommand{\backslash}{\char"5C}
 \renewcommand{\tilde}{\char"7E}
 \newcommand{\backtick}{\char"60}
