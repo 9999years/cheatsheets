@@ -1,5 +1,5 @@
 Update your Git branch:
-- jj branch set your-branch -r HEAD@git
+- jj branch set your-branch -r @-
 
 Move changes to a parent commit:
 - jj squash -i
