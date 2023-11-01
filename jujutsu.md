@@ -1,10 +1,22 @@
 Update your Git branch:
 - jj branch set your-branch -r HEAD@git
 
-# Commands to investigate
+Move changes to a parent commit:
+- jj squash -i
 
-- git commit -am -> jj describe && jj new
+Move changes in general:
+- jj move {--from|--too}
+
+Edit a diff without checking out:
+- jj diffedit [-r REV]
+
+# Git commands
+
+- git commit -am ... -> jj commit -m ...
+    - jj describe && jj new
     - describe sets the message, new finishes the commit
+- git add --patch -> jj split
+- git commit --patch -> jj commit --interactive
 - git commit --amend -> jj squash
 - git checkout BRANCH -> jj checkout BRANCH (jj co BRANCH)
     - alias for `jj new`
@@ -13,10 +25,6 @@ Update your Git branch:
 - git show HEAD^ -> jj show @-
     - if you use `jj show @^` it will kindly inform you that the `@-` means
       parents of the working commit.
-
-# Git equivalents
-
-- git add --patch -> jj split
 - git branch -v -> jj branch list (jj b l)
 
 # Rebasing
@@ -28,3 +36,10 @@ of commits can be given with:
 - jj rebase -r REV -d DEST for a single commit
 
 You can specify multiple destinations to create merge commits.
+
+# Resolving conflicts
+
+- jj resolve
+- `jj new REVISION` to create a new resolution commit after the given commit
+  with conflicts
+- then `jj squash` to combine the commits
