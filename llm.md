@@ -15,6 +15,21 @@ In an `ollama run` session...
 - `/clear` to clear the current session context (previous messages)
 - `/set system PROMPT` to set the system prompt
 - `/set parameter` to show available parameters like `temperature`
+
+      >>> /set parameter
+      Available Parameters:
+        /set parameter seed <int>             Random number seed
+        /set parameter num_predict <int>      Max number of tokens to predict
+        /set parameter top_k <int>            Pick from top k num of tokens
+        /set parameter top_p <float>          Pick token based on sum of probabilities
+        /set parameter min_p <float>          Pick token based on top token probability * min_p
+        /set parameter num_ctx <int>          Set the context size
+        /set parameter temperature <float>    Set creativity level
+        /set parameter repeat_penalty <float> How strongly to penalize repetitions
+        /set parameter repeat_last_n <int>    Set how far back to look for repetitions
+        /set parameter num_gpu <int>          The number of layers to send to the GPU
+        /set parameter stop <string> <string> ...   Set the stop parameters
+
 - `/set parameter temperature 2.0` to make things sillier
 
 Info, debugging:
