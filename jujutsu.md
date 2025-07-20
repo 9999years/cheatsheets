@@ -1,3 +1,19 @@
+See: <https://github.com/jj-vcs/jj>
+
+# Workflows
+
+- "Megamerge": <https://v5.chriskrycho.com/journal/jujutsu-megamerges-and-jj-absorb>
+  - Keep a number of changes in your working copy and split changes as you make
+    them into new 'parallel' commits.
+
+# Problems
+
+- No `diff.colorMoved` equivalent: <https://github.com/jj-vcs/jj/issues/76>
+- No rename-following for logs, rebases: <https://github.com/jj-vcs/jj/issues/6940>
+
+
+# Misc
+
 Update your Git branch:
 - jj branch set your-branch -r @-
 
