@@ -13,3 +13,4 @@ See: <https://github.com/jj-vcs/jj>
 
 - No `diff.colorMoved` equivalent: <https://github.com/jj-vcs/jj/issues/76>
 - No rename-following for logs, rebases: <https://github.com/jj-vcs/jj/issues/6940>
+- No `jj clean`: <https://github.com/jj-vcs/jj/issues/3154>
