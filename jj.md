@@ -19,3 +19,4 @@ See: <https://github.com/jj-vcs/jj>
   - No way to list workspace paths: <https://github.com/jj-vcs/jj/issues/6854>
   - No clear way to clone into a workspace without manually deleting all the
     tracked files: <https://github.com/jj-vcs/jj/issues/7115>
+  - Workspaces are not colocated as Git repositories: <https://github.com/jj-vcs/jj/issues/4436>
