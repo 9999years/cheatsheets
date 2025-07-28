@@ -14,3 +14,8 @@ See: <https://github.com/jj-vcs/jj>
 - No `diff.colorMoved` equivalent: <https://github.com/jj-vcs/jj/issues/76>
 - No rename-following for logs, rebases: <https://github.com/jj-vcs/jj/issues/6940>
 - No `jj clean`: <https://github.com/jj-vcs/jj/issues/3154>
+- Workspaces are a bit underbaked.
+  - No way to move workspaces: <https://github.com/jj-vcs/jj/issues/7113>
+  - No way to list workspace paths: <https://github.com/jj-vcs/jj/issues/6854>
+  - No clear way to clone into a workspace without manually deleting all the
+    tracked files: <https://github.com/jj-vcs/jj/issues/7115>
