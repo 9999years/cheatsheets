@@ -6,6 +6,8 @@ See: <https://github.com/jj-vcs/jj>
   - Keep a number of changes in your working copy and split changes as you make
     them into new 'parallel' commits.
   - Also: <https://ofcr.se/jujutsu-merge-workflow>
+  - Create a new stream of work: `jj split -B merge -A master@upstream -i`
+    - TODO: Can we do something clever with revsets here?
 
 # Problems
 
