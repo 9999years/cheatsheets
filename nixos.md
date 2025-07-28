@@ -27,3 +27,18 @@ pkgs.mkShell {
   ];
 }
 ```
+
+## Nixpkgs
+
+Build tests (`pkgs/test/default.nix`):
+
+```bash
+nix build --file . tests.haskell.env
+```
+
+## nix-eval-jobs
+
+```bash
+nix-eval-jobs --expr 'with import ./. {}; tests.haskell' | jq
+nix-eval-jobs --expr 'with import ./. {}; tests.haskell' | jq --raw-output .drvPath | xargs nix build --log-format multiline-with-logs
+```
