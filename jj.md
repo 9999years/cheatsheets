@@ -1,5 +1,9 @@
 See: <https://github.com/jj-vcs/jj>
 
+- Revsets: <https://jj-vcs.github.io/jj/latest/revsets/>
+- Settings: <https://jj-vcs.github.io/jj/latest/config/>
+- Git conversion table: <https://jj-vcs.github.io/jj/latest/git-command-table/>
+
 # Workflows
 
 - "Megamerge": <https://v5.chriskrycho.com/journal/jujutsu-megamerges-and-jj-absorb>
