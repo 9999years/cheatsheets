@@ -26,3 +26,9 @@ See: <https://github.com/jj-vcs/jj>
   - Workspaces are not colocated as Git repositories: <https://github.com/jj-vcs/jj/issues/4436>
 - Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
   pauses: <https://github.com/jj-vcs/jj/issues/5817>
+- Conflicts include lines with the same changes on both sides:
+  <https://github.com/jj-vcs/jj/issues/7173>
+- Conflict markers do not include the base contents:
+  <https://github.com/jj-vcs/jj/issues/6021>
+- Conflict markers do not include the revision each side is from:
+  <https://github.com/jj-vcs/jj/issues/1176>
