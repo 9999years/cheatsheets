@@ -24,3 +24,5 @@ See: <https://github.com/jj-vcs/jj>
   - No clear way to clone into a workspace without manually deleting all the
     tracked files: <https://github.com/jj-vcs/jj/issues/7115>
   - Workspaces are not colocated as Git repositories: <https://github.com/jj-vcs/jj/issues/4436>
+- Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
+  pauses: <https://github.com/jj-vcs/jj/issues/5817>
