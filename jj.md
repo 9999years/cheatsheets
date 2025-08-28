@@ -12,23 +12,55 @@ See: <https://github.com/jj-vcs/jj>
   - Also: <https://ofcr.se/jujutsu-merge-workflow>
   - Create a new stream of work: `jj split -B merge -A master@upstream -i`
     - TODO: Can we do something clever with revsets here?
+    - Move changes from your WIP commit to a new arm of the merge:
+      `jj split -B merge -A master@upstream .`
 
-# Problems
+# Gripes / issues to keep an eye on
 
-- No `diff.colorMoved` equivalent: <https://github.com/jj-vcs/jj/issues/76>
-- No rename-following for logs, rebases: <https://github.com/jj-vcs/jj/issues/6940>
-- No `jj clean`: <https://github.com/jj-vcs/jj/issues/3154>
-- Workspaces are a bit underbaked.
-  - No way to move workspaces: <https://github.com/jj-vcs/jj/issues/7113>
-  - No way to list workspace paths: <https://github.com/jj-vcs/jj/issues/6854>
-  - No clear way to clone into a workspace without manually deleting all the
-    tracked files: <https://github.com/jj-vcs/jj/issues/7115>
-  - Workspaces are not colocated as Git repositories: <https://github.com/jj-vcs/jj/issues/4436>
-- Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
-  pauses: <https://github.com/jj-vcs/jj/issues/5817>
+## Conflicts
+
 - Conflicts include lines with the same changes on both sides:
   <https://github.com/jj-vcs/jj/issues/7173>
 - Conflict markers do not include the base contents:
   <https://github.com/jj-vcs/jj/issues/6021>
 - Conflict markers do not include the revision each side is from:
   <https://github.com/jj-vcs/jj/issues/1176>
+
+## Templates
+
+- No easy way to list/format conflicted files:
+  <https://github.com/jj-vcs/jj/issues/7377>
+- No way to write comments in templates:
+  <https://github.com/jj-vcs/jj/issues/5317>
+- Whitespace is not allowed before method calls in templates, so you can't do
+  the normal method chain syntax: <https://github.com/jj-vcs/jj/issues/7378>
+
+## Log
+
+- No rename-following for logs, rebases: <https://github.com/jj-vcs/jj/issues/6940>
+- Count of elided commits is not shown: <https://github.com/jj-vcs/jj/issues/5830>
+
+## Diffs
+
+- No `diff.colorMoved` equivalent: <https://github.com/jj-vcs/jj/issues/76>
+
+## CLI
+
+- No `jj clean`: <https://github.com/jj-vcs/jj/issues/3154>
+
+## Git interop
+
+- No easy way to import a specific Git commit: <https://github.com/jj-vcs/jj/discussions/7369>
+
+## Workspaces
+
+- No way to move workspaces: <https://github.com/jj-vcs/jj/issues/7113>
+- No way to list workspace paths: <https://github.com/jj-vcs/jj/issues/6854>
+- No clear way to clone into a workspace without manually deleting all the
+  tracked files: <https://github.com/jj-vcs/jj/issues/7115>
+- Workspaces are not colocated as Git repositories: <https://github.com/jj-vcs/jj/issues/4436>
+
+## Performance
+
+- Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
+  pauses: <https://github.com/jj-vcs/jj/issues/5817>
