@@ -46,3 +46,34 @@ Aliases: https://www.nushell.sh/book/aliases.html
 ```nushell
 alias ll = ls -la
 ```
+
+Some issues to keep an eye on:
+
+- https://github.com/nushell/nushell/issues/12956
+  These are parsed differently:
+
+      let $example = "hello"
+      let $my_example = example  # Runs a command
+
+      mut $my_example = ""
+      $my_example = example  # Parses as a string
+
+- https://github.com/nushell/nushell/issues/12750
+  String interpolation is extremely verbose:
+
+      cd $"($env.ENV_PREFIX)/my/dir/to/($env.PACKAGE)"
+
+- https://github.com/nushell/nushell/issues/1275
+  No fuzzy find
+
+- https://github.com/nushell/nushell/issues/8214
+  Hard/impossible to conditionally source a file (needs `source
+  empty_file.nu` workaround)
+
+- https://github.com/nushell/nushell/issues?q=is%3Aopen+label%3Acompletions+sort%3Acomments-desc
+  Completions for external commands are clumsy and require generating
+  yet another completion script.
+
+  - https://github.com/nushell/nushell/issues/11337
+    No standard path for package managers to install completion scripts
+    to; users must manually add such paths.
