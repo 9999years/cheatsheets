@@ -50,6 +50,58 @@ U+1FBEx  🯠  🯡  🯢  🯣  🯤  🯥  🯦  🯧  🯨  🯩  🯪  🯫 
 U+1FBFx  🯰  🯱  🯲  🯳  🯴  🯵  🯶  🯷  🯸  🯹
 ```
 
+# Symbols for Legacy Computing Supplement
+
+See: <https://en.wikipedia.org/wiki/Symbols_for_Legacy_Computing_Supplement>
+
+```
+        0 1 2 3 4 5 6 7 8 9 A B C D E F
+U+1CC0x 𜰀 𜰁 𜰂 𜰃 𜰄 𜰅 𜰆 𜰇 𜰈 𜰉 𜰊 𜰋 𜰌 𜰍 𜰎 𜰏
+U+1CC1x 𜰐 𜰑 𜰒 𜰓 𜰔 𜰕 𜰖 𜰗 𜰘 𜰙 𜰚 𜰛 𜰜 𜰝 𜰞 𜰟
+U+1CC2x 𜰠 𜰡 𜰢 𜰣 𜰤 𜰥 𜰦 𜰧 𜰨 𜰩 𜰪 𜰫 𜰬 𜰭 𜰮 𜰯
+U+1CC3x 𜰰 𜰱 𜰲 𜰳 𜰴 𜰵 𜰶 𜰷 𜰸 𜰹 𜰺 𜰻 𜰼 𜰽 𜰾 𜰿
+U+1CC4x 𜱀 𜱁 𜱂 𜱃 𜱄 𜱅 𜱆 𜱇 𜱈 𜱉 𜱊 𜱋 𜱌 𜱍 𜱎 𜱏
+U+1CC5x 𜱐 𜱑 𜱒 𜱓 𜱔 𜱕 𜱖 𜱗 𜱘 𜱙 𜱚 𜱛 𜱜 𜱝 𜱞 𜱟
+U+1CC6x 𜱠 𜱡 𜱢 𜱣 𜱤 𜱥 𜱦 𜱧 𜱨 𜱩 𜱪 𜱫 𜱬 𜱭 𜱮 𜱯
+U+1CC7x 𜱰 𜱱 𜱲 𜱳 𜱴 𜱵 𜱶 𜱷 𜱸 𜱹 𜱺 𜱻 𜱼 𜱽 𜱾 𜱿
+U+1CC8x 𜲀 𜲁 𜲂 𜲃 𜲄 𜲅 𜲆 𜲇 𜲈 𜲉 𜲊 𜲋 𜲌 𜲍 𜲎 𜲏
+U+1CC9x 𜲐 𜲑 𜲒 𜲓 𜲔 𜲕 𜲖 𜲗 𜲘 𜲙 𜲚 𜲛 𜲜 𜲝 𜲞 𜲟
+U+1CCAx 𜲠 𜲡 𜲢 𜲣 𜲤 𜲥 𜲦 𜲧 𜲨 𜲩 𜲪 𜲫 𜲬 𜲭 𜲮 𜲯
+U+1CCBx 𜲰 𜲱 𜲲 𜲳 𜲴 𜲵 𜲶 𜲷 𜲸 𜲹 𜲺 𜲻 𜲼 𜲽 𜲾 𜲿
+U+1CCCx 𜳀 𜳁 𜳂 𜳃 𜳄 𜳅 𜳆 𜳇 𜳈 𜳉 𜳊 𜳋 𜳌 𜳍 𜳎 𜳏
+U+1CCDx 𜳐 𜳑 𜳒 𜳓 𜳔 𜳕 𜳖 𜳗 𜳘 𜳙 𜳚 𜳛 𜳜 𜳝 𜳞 𜳟
+U+1CCEx 𜳠 𜳡 𜳢 𜳣 𜳤 𜳥 𜳦 𜳧 𜳨 𜳩 𜳪 𜳫 𜳬 𜳭 𜳮 𜳯
+U+1CCFx 𜳰 𜳱 𜳲 𜳳 𜳴 𜳵 𜳶 𜳷 𜳸 𜳹
+U+1CD0x 𜴀 𜴁 𜴂 𜴃 𜴄 𜴅 𜴆 𜴇 𜴈 𜴉 𜴊 𜴋 𜴌 𜴍 𜴎 𜴏
+U+1CD1x 𜴐 𜴑 𜴒 𜴓 𜴔 𜴕 𜴖 𜴗 𜴘 𜴙 𜴚 𜴛 𜴜 𜴝 𜴞 𜴟
+U+1CD2x 𜴠 𜴡 𜴢 𜴣 𜴤 𜴥 𜴦 𜴧 𜴨 𜴩 𜴪 𜴫 𜴬 𜴭 𜴮 𜴯
+U+1CD3x 𜴰 𜴱 𜴲 𜴳 𜴴 𜴵 𜴶 𜴷 𜴸 𜴹 𜴺 𜴻 𜴼 𜴽 𜴾 𜴿
+U+1CD4x 𜵀 𜵁 𜵂 𜵃 𜵄 𜵅 𜵆 𜵇 𜵈 𜵉 𜵊 𜵋 𜵌 𜵍 𜵎 𜵏
+U+1CD5x 𜵐 𜵑 𜵒 𜵓 𜵔 𜵕 𜵖 𜵗 𜵘 𜵙 𜵚 𜵛 𜵜 𜵝 𜵞 𜵟
+U+1CD6x 𜵠 𜵡 𜵢 𜵣 𜵤 𜵥 𜵦 𜵧 𜵨 𜵩 𜵪 𜵫 𜵬 𜵭 𜵮 𜵯
+U+1CD7x 𜵰 𜵱 𜵲 𜵳 𜵴 𜵵 𜵶 𜵷 𜵸 𜵹 𜵺 𜵻 𜵼 𜵽 𜵾 𜵿
+U+1CD8x 𜶀 𜶁 𜶂 𜶃 𜶄 𜶅 𜶆 𜶇 𜶈 𜶉 𜶊 𜶋 𜶌 𜶍 𜶎 𜶏
+U+1CD9x 𜶐 𜶑 𜶒 𜶓 𜶔 𜶕 𜶖 𜶗 𜶘 𜶙 𜶚 𜶛 𜶜 𜶝 𜶞 𜶟
+U+1CDAx 𜶠 𜶡 𜶢 𜶣 𜶤 𜶥 𜶦 𜶧 𜶨 𜶩 𜶪 𜶫 𜶬 𜶭 𜶮 𜶯
+U+1CDBx 𜶰 𜶱 𜶲 𜶳 𜶴 𜶵 𜶶 𜶷 𜶸 𜶹 𜶺 𜶻 𜶼 𜶽 𜶾 𜶿
+U+1CDCx 𜷀 𜷁 𜷂 𜷃 𜷄 𜷅 𜷆 𜷇 𜷈 𜷉 𜷊 𜷋 𜷌 𜷍 𜷎 𜷏
+U+1CDDx 𜷐 𜷑 𜷒 𜷓 𜷔 𜷕 𜷖 𜷗 𜷘 𜷙 𜷚 𜷛 𜷜 𜷝 𜷞 𜷟
+U+1CDEx 𜷠 𜷡 𜷢 𜷣 𜷤 𜷥 𜷦 𜷧 𜷨 𜷩 𜷪 𜷫 𜷬 𜷭 𜷮 𜷯
+U+1CDFx 𜷰 𜷱 𜷲 𜷳 𜷴 𜷵 𜷶 𜷷 𜷸 𜷹 𜷺 𜷻 𜷼 𜷽 𜷾 𜷿
+U+1CE0x 𜸀 𜸁 𜸂 𜸃 𜸄 𜸅 𜸆 𜸇 𜸈 𜸉 𜸊 𜸋 𜸌 𜸍 𜸎 𜸏
+U+1CE1x 𜸐 𜸑 𜸒 𜸓 𜸔 𜸕 𜸖 𜸗 𜸘 𜸙 𜸚 𜸛 𜸜 𜸝 𜸞 𜸟
+U+1CE2x 𜸠 𜸡 𜸢 𜸣 𜸤 𜸥 𜸦 𜸧 𜸨 𜸩 𜸪 𜸫 𜸬 𜸭 𜸮 𜸯
+U+1CE3x 𜸰 𜸱 𜸲 𜸳 𜸴 𜸵 𜸶 𜸷 𜸸 𜸹 𜸺 𜸻 𜸼 𜸽 𜸾 𜸿
+U+1CE4x 𜹀 𜹁 𜹂 𜹃 𜹄 𜹅 𜹆 𜹇 𜹈 𜹉 𜹊 𜹋 𜹌 𜹍 𜹎 𜹏
+U+1CE5x 𜹐 𜹑 𜹒 𜹓 𜹔 𜹕 𜹖 𜹗 𜹘 𜹙 𜹚 𜹛 𜹜 𜹝 𜹞 𜹟
+U+1CE6x 𜹠 𜹡 𜹢 𜹣 𜹤 𜹥 𜹦 𜹧 𜹨 𜹩 𜹪 𜹫 𜹬 𜹭 𜹮 𜹯
+U+1CE7x 𜹰 𜹱 𜹲 𜹳 𜹴 𜹵 𜹶 𜹷 𜹸 𜹹 𜹺 𜹻 𜹼 𜹽 𜹾 𜹿
+U+1CE8x 𜺀 𜺁 𜺂 𜺃 𜺄 𜺅 𜺆 𜺇 𜺈 𜺉 𜺊 𜺋 𜺌 𜺍 𜺎 𜺏
+U+1CE9x 𜺐 𜺑 𜺒 𜺓 𜺔 𜺕 𜺖 𜺗 𜺘 𜺙 𜺚 𜺛 𜺜 𜺝 𜺞 𜺟
+U+1CEAx 𜺠 𜺡 𜺢 𜺣 𜺤 𜺥 𜺦 𜺧 𜺨 𜺩 𜺪 𜺫 𜺬 𜺭 𜺮 𜺯
+U+1CEBx 𜺰 𜺱 𜺲 𜺳
+```
+
 # Geometric Shapes
 
 See: <https://en.wikipedia.org/wiki/Geometric_Shapes_(Unicode_block)>
@@ -139,8 +191,63 @@ U+22Fx  ⋰  ⋱  ⋲  ⋳  ⋴  ⋵  ⋶  ⋷  ⋸  ⋹  ⋺  ⋻  ⋼  ⋽  �
 
 # Supplemental Mathematical Operators
 
+See: <https://en.wikipedia.org/wiki/Supplemental_Mathematical_Operators>
+
+```
+       0 1 2 3 4 5 6 7 8 9 A B C D E F
+U+2A0x ⨀ ⨁ ⨂ ⨃ ⨄ ⨅ ⨆ ⨇ ⨈ ⨉ ⨊ ⨋ ⨌ ⨍ ⨎ ⨏
+U+2A1x ⨐ ⨑ ⨒ ⨓ ⨔ ⨕ ⨖ ⨗ ⨘ ⨙ ⨚ ⨛ ⨜ ⨝ ⨞ ⨟
+U+2A2x ⨠ ⨡ ⨢ ⨣ ⨤ ⨥ ⨦ ⨧ ⨨ ⨩ ⨪ ⨫ ⨬ ⨭ ⨮ ⨯
+U+2A3x ⨰ ⨱ ⨲ ⨳ ⨴ ⨵ ⨶ ⨷ ⨸ ⨹ ⨺ ⨻ ⨼ ⨽ ⨾ ⨿
+U+2A4x ⩀ ⩁ ⩂ ⩃ ⩄ ⩅ ⩆ ⩇ ⩈ ⩉ ⩊ ⩋ ⩌ ⩍ ⩎ ⩏
+U+2A5x ⩐ ⩑ ⩒ ⩓ ⩔ ⩕ ⩖ ⩗ ⩘ ⩙ ⩚ ⩛ ⩜ ⩝ ⩞ ⩟
+U+2A6x ⩠ ⩡ ⩢ ⩣ ⩤ ⩥ ⩦ ⩧ ⩨ ⩩ ⩪ ⩫ ⩬ ⩭ ⩮ ⩯
+U+2A7x ⩰ ⩱ ⩲ ⩳ ⩴ ⩵ ⩶ ⩷ ⩸ ⩹ ⩺ ⩻ ⩼ ⩽ ⩾ ⩿
+U+2A8x ⪀ ⪁ ⪂ ⪃ ⪄ ⪅ ⪆ ⪇ ⪈ ⪉ ⪊ ⪋ ⪌ ⪍ ⪎ ⪏
+U+2A9x ⪐ ⪑ ⪒ ⪓ ⪔ ⪕ ⪖ ⪗ ⪘ ⪙ ⪚ ⪛ ⪜ ⪝ ⪞ ⪟
+U+2AAx ⪠ ⪡ ⪢ ⪣ ⪤ ⪥ ⪦ ⪧ ⪨ ⪩ ⪪ ⪫ ⪬ ⪭ ⪮ ⪯
+U+2ABx ⪰ ⪱ ⪲ ⪳ ⪴ ⪵ ⪶ ⪷ ⪸ ⪹ ⪺ ⪻ ⪼ ⪽ ⪾ ⪿
+U+2ACx ⫀ ⫁ ⫂ ⫃ ⫄ ⫅ ⫆ ⫇ ⫈ ⫉ ⫊ ⫋ ⫌ ⫍ ⫎ ⫏
+U+2ADx ⫐ ⫑ ⫒ ⫓ ⫔ ⫕ ⫖ ⫗ ⫘ ⫙ ⫚ ⫛ ⫝̸ ⫝ ⫞ ⫟
+U+2AEx ⫠ ⫡ ⫢ ⫣ ⫤ ⫥ ⫦ ⫧ ⫨ ⫩ ⫪ ⫫ ⫬ ⫭ ⫮ ⫯
+U+2AFx ⫰ ⫱ ⫲ ⫳ ⫴ ⫵ ⫶ ⫷ ⫸ ⫹ ⫺ ⫻ ⫼ ⫽ ⫾ ⫿ 
+```
+
 # Letterlike Symbols
+
+See: <https://en.wikipedia.org/wiki/Letterlike_Symbols>
+
+```
+       0 1 2 3 4 5 6 7 8 9 A B C D E F
+U+210x ℀ ℁ ℂ ℃ ℄ ℅ ℆ ℇ ℈ ℉ ℊ ℋ ℌ ℍ ℎ ℏ
+U+211x ℐ ℑ ℒ ℓ ℔ ℕ № ℗ ℘ ℙ ℚ ℛ ℜ ℝ ℞ ℟
+U+212x ℠ ℡ ™ ℣ ℤ ℥ Ω ℧ ℨ ℩ K Å ℬ ℭ ℮ ℯ
+U+213x ℰ ℱ Ⅎ ℳ ℴ ℵ ℶ ℷ ℸ ℹ ℺ ℻ ℼ ℽ ℾ ℿ
+U+214x ⅀ ⅁ ⅂ ⅃ ⅄ ⅅ ⅆ ⅇ ⅈ ⅉ ⅊ ⅋ ⅌ ⅍ ⅎ ⅏
+```
 
 # Miscellaneous Mathematical Symbols-A
 
+See: <https://en.wikipedia.org/wiki/Miscellaneous_Mathematical_Symbols-A>
+
+```
+       0 1 2 3 4 5 6 7 8 9 A B C D E F
+U+27Cx ⟀ ⟁ ⟂ ⟃ ⟄ ⟅ ⟆ ⟇ ⟈ ⟉ ⟊ ⟋ ⟌ ⟍ ⟎ ⟏
+U+27Dx ⟐ ⟑ ⟒ ⟓ ⟔ ⟕ ⟖ ⟗ ⟘ ⟙ ⟚ ⟛ ⟜ ⟝ ⟞ ⟟
+U+27Ex ⟠ ⟡ ⟢ ⟣ ⟤ ⟥ ⟦ ⟧ ⟨ ⟩ ⟪ ⟫ ⟬ ⟭ ⟮ ⟯
+```
+
 # Miscellaneous Mathematical Symbols-B
+
+See: <https://en.wikipedia.org/wiki/Miscellaneous_Mathematical_Symbols-B>
+```
+       0 1 2 3 4 5 6 7 8 9 A B C D E F
+U+298x ⦀ ⦁ ⦂ ⦃ ⦄ ⦅ ⦆ ⦇ ⦈ ⦉ ⦊ ⦋ ⦌ ⦍ ⦎ ⦏
+U+299x ⦐ ⦑ ⦒ ⦓ ⦔ ⦕ ⦖ ⦗ ⦘ ⦙ ⦚ ⦛ ⦜ ⦝ ⦞ ⦟
+U+29Ax ⦠ ⦡ ⦢ ⦣ ⦤ ⦥ ⦦ ⦧ ⦨ ⦩ ⦪ ⦫ ⦬ ⦭ ⦮ ⦯
+U+29Bx ⦰ ⦱ ⦲ ⦳ ⦴ ⦵ ⦶ ⦷ ⦸ ⦹ ⦺ ⦻ ⦼ ⦽ ⦾ ⦿
+U+29Cx ⧀ ⧁ ⧂ ⧃ ⧄ ⧅ ⧆ ⧇ ⧈ ⧉ ⧊ ⧋ ⧌ ⧍ ⧎ ⧏
+U+29Dx ⧐ ⧑ ⧒ ⧓ ⧔ ⧕ ⧖ ⧗ ⧘ ⧙ ⧚ ⧛ ⧜ ⧝ ⧞ ⧟
+U+29Ex ⧠ ⧡ ⧢ ⧣ ⧤ ⧥ ⧦ ⧧ ⧨ ⧩ ⧪ ⧫ ⧬ ⧭ ⧮ ⧯
+U+29Fx ⧰ ⧱ ⧲ ⧳ ⧴ ⧵ ⧶ ⧷ ⧸ ⧹ ⧺ ⧻ ⧼ ⧽ ⧾ ⧿
+```
