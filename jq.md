@@ -15,6 +15,7 @@ Filtering/mapping:
 - `keys`
 - `has("key")`
 - `map(.+1)`
+- `map_values(.+1)`
 
 ```
 echo '[{"name": "John", "age": 30}]' | jq '.[]|select(.age > 25)'
