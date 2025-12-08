@@ -45,6 +45,7 @@ See: <https://github.com/jj-vcs/jj>
 ## Diffs
 
 - No `diff.colorMoved` equivalent: <https://github.com/jj-vcs/jj/issues/76>
+- No way to hide diffs for lockfiles: <https://github.com/jj-vcs/jj/issues/4548>
 
 ## CLI
 
