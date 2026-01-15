@@ -1,5 +1,8 @@
 # ANSI Escape Sequences
 
+<https://terminalguide.namepad.de/>
+<https://invisible-island.net/xterm/ctlseqs/ctlseqs.html>
+
 Standard escape codes are prefixed with `Escape`:
 
 - Ctrl-Key: `^[`
