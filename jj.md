@@ -58,12 +58,24 @@ See: <https://github.com/jj-vcs/jj>
 ## Workspaces
 
 - No way to move workspaces: <https://github.com/jj-vcs/jj/issues/7113>
-- No way to list workspace paths: <https://github.com/jj-vcs/jj/issues/6854>
 - No clear way to clone into a workspace without manually deleting all the
   tracked files: <https://github.com/jj-vcs/jj/issues/7115>
-- Workspaces are not colocated as Git repositories: <https://github.com/jj-vcs/jj/issues/4436>
+- Workspaces are not colocated as Git repositories
+  - This means that any tooling that wants to use Git breaks
+  - <https://github.com/jj-vcs/jj/issues/4436>
+  - <https://github.com/jj-vcs/jj/issues/8052>
 
 ## Performance
 
 - Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
   pauses: <https://github.com/jj-vcs/jj/issues/5817>
+
+## Bookmarks
+
+- No way to set `--allow-backwards` by default for `jj bookmark move` and `jj
+  bookmark set`: <github.com/jj-vcs/jj/issues/8808>
+
+## Split
+
+- New commit gets the change ID of the input commit when `jj split` is used:
+  <https://github.com/jj-vcs/jj/issues/8854>
