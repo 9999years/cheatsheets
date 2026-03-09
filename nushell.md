@@ -47,11 +47,21 @@ Aliases: https://www.nushell.sh/book/aliases.html
 alias ll = ls -la
 ```
 
+Nushell has _no_ tests for and no _way_ to test its interactive behavior. You
+cannot pipe input to Nushell and you can't use anything like pexpect to test it
+either due to various nonsense in the interactive components.
+
 Some issues to keep an eye on here. Note that several of these are closed but
 not actually resolved; the nushell maintainers seem to frequently close issues
 if they can find any _conceivable_ workaround for a particular complaint,
 regardless of it it solves the underlying issue. Many of these issues have
 extensive discussion _after_ being closed. lol, lmao, as they say
+
+- No way to set `~/.config/nushell` as your configuration directory on macOS:
+  https://github.com/nushell/nushell/issues/893
+
+- No grammar is listed, many parts of the language are undocumented (e.g.
+  assignment): https://github.com/nushell/nushell/issues/12957
 
 - https://github.com/nushell/nushell/issues/12956
   These are parsed differently:
