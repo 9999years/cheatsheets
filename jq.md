@@ -22,3 +22,5 @@ echo '[{"name": "John", "age": 30}]' | jq '.[]|select(.age > 25)'
 ```
 
 String interpolation: `echo '{"name": "Alice"}' | jq '"Hello, \(.name)!"'`
+
+Length: `jq 'length'`. Yeah ok
