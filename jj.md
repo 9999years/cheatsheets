@@ -70,6 +70,10 @@ See: <https://github.com/jj-vcs/jj>
 - Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
   pauses: <https://github.com/jj-vcs/jj/issues/5817>
 
+- Garbage collection is not automatic / difficult to discover and trigger
+  - <https://github.com/jj-vcs/jj/issues/8312>
+  - <https://github.com/jj-vcs/jj/issues/7001>
+
 ## Bookmarks
 
 - No way to set `--allow-backwards` by default for `jj bookmark move` and `jj
