@@ -23,19 +23,13 @@ See: <https://github.com/jj-vcs/jj>
   <https://github.com/jj-vcs/jj/issues/7173>
 - Conflict markers do not include the base contents:
   <https://github.com/jj-vcs/jj/issues/6021>
-- Conflict markers do not include the revision each side is from:
-  <https://github.com/jj-vcs/jj/issues/1176>
 - Hard to select conflicted files in templates:
   <https://github.com/jj-vcs/jj/issues/5213>
 
 ## Templates
 
-- No easy way to list/format conflicted files:
-  <https://github.com/jj-vcs/jj/issues/7377>
 - No way to write comments in templates:
   <https://github.com/jj-vcs/jj/issues/5317>
-- Whitespace is not allowed before method calls in templates, so you can't do
-  the normal method chain syntax: <https://github.com/jj-vcs/jj/issues/7378>
 
 ## Log
 
