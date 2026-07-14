@@ -77,3 +77,5 @@ See: <https://github.com/jj-vcs/jj>
 
 - New commit gets the change ID of the input commit when `jj split` is used:
   <https://github.com/jj-vcs/jj/issues/8854>
+- No agent-friendly interface for splitting hunks:
+  <https://github.com/jj-vcs/jj/issues/9814>
