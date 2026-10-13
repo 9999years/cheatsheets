@@ -23,8 +23,6 @@ See: <https://github.com/jj-vcs/jj>
   <https://github.com/jj-vcs/jj/issues/7173>
 - Conflict markers do not include the base contents:
   <https://github.com/jj-vcs/jj/issues/6021>
-- Hard to select conflicted files in templates:
-  <https://github.com/jj-vcs/jj/issues/5213>
 
 ## Templates
 
@@ -55,19 +53,14 @@ See: <https://github.com/jj-vcs/jj>
 - No way to move workspaces: <https://github.com/jj-vcs/jj/issues/7113>
 - No clear way to clone into a workspace without manually deleting all the
   tracked files: <https://github.com/jj-vcs/jj/issues/7115>
-- Workspaces are not colocated as Git repositories
-  - This means that any tooling that wants to use Git breaks
-  - <https://github.com/jj-vcs/jj/issues/4436>
-  - <https://github.com/jj-vcs/jj/issues/8052>
 
 ## Performance
 
 - Multiple `$TMPDIR`s results in watchman exiting and restarting, multi-second
   pauses: <https://github.com/jj-vcs/jj/issues/5817>
 
-- Garbage collection is not automatic / difficult to discover and trigger
-  - <https://github.com/jj-vcs/jj/issues/8312>
-  - <https://github.com/jj-vcs/jj/issues/7001>
+- Garbage collection is not automatic / difficult to discover and trigger:
+  <https://github.com/jj-vcs/jj/issues/7001>
 
 ## Bookmarks
 
@@ -79,4 +72,4 @@ See: <https://github.com/jj-vcs/jj>
 - New commit gets the change ID of the input commit when `jj split` is used:
   <https://github.com/jj-vcs/jj/issues/8854>
 - No agent-friendly interface for splitting hunks:
-  <https://github.com/jj-vcs/jj/issues/9814>
+  <https://github.com/jj-vcs/jj/issues/8218>
