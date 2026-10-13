@@ -44,6 +44,7 @@ See: <https://github.com/jj-vcs/jj>
 ## CLI
 
 - No `jj clean`: <https://github.com/jj-vcs/jj/issues/3154>
+- Running a `jj` command at the same time as `jj git fetch` creates a bunch of divergent commits: <https://github.com/jj-vcs/jj/issues/7349>
 
 ## Git interop
 
